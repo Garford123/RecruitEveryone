@@ -41,7 +41,7 @@ namespace RecruitEveryone.Behaviors
 
 		protected void AddDialogs(CampaignGameStarter starter)
 		{
-			foreach (Hero hero in Hero.All.ToListQ())
+			foreach (Hero hero in Hero.AllAliveHeroes.ToListQ())
 			{
 				// Fix if they are not a proper companion
 				if (hero.IsPlayerCompanion)
