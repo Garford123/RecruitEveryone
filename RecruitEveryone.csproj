@@ -25,16 +25,11 @@
     <!--Windows-->
     <!--<GameFolder Condition="$(GameFolder) == '' AND $(OS) == 'Windows_NT'">$(registry:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 261550@InstallLocation)</GameFolder>
     <GameFolder Condition="$(GameFolder) == '' AND $(OS) == 'Windows_NT'">C:\Program Files (x86)\Steam\steamapps\common\Mount &amp; Blade II Bannerlord</GameFolder>-->
-<<<<<<< HEAD
-    <GameFolder Condition="$(GameFolder) == '' AND $(OS) == 'Windows_NT' and $(GameVersion) == '1.6.4'">E:\Mount &amp; Blade II 164 Steam</GameFolder>
-	<GameFolder Condition="$(GameFolder) == '' AND $(OS) == 'Windows_NT' and $(GameVersion) == '1.6.5'">E:\Mount &amp; Blade II 165 Steam</GameFolder>
-	<GameFolder Condition="$(GameFolder) == '' AND $(OS) == 'Windows_NT' and $(GameVersion) == '1.7.0'">E:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord</GameFolder>
-=======
 	  
 	  <GameFolder Condition="$(GameFolder) == '' AND $(OS) == 'Windows_NT' and $(GameVersion) == '1.6.4'">C:\Users\pCd\Desktop\GAMES\Mount &amp; Blade II Bannerlord 1.6.4</GameFolder>
+	  <GameFolder Condition="$(GameFolder) == '' AND $(OS) == 'Windows_NT' and $(GameVersion) == '1.6.4'">E:\Mount &amp; Blade II 164 Steam</GameFolder>
 	  <GameFolder Condition="$(GameFolder) == '' AND $(OS) == 'Windows_NT' and $(GameVersion) == '1.6.5'">E:\Mount &amp; Blade II 165 Steam</GameFolder>
 	  <GameFolder Condition="$(GameFolder) == '' AND $(OS) == 'Windows_NT' and $(GameVersion) == '1.7.0'">E:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord</GameFolder>
->>>>>>> 73957631ca937323049b472c5601b066945a8cb0
 	  <!--Unix-->
     <GameFolder Condition="$(GameFolder) == '' AND $(OS) == 'Unix'">~/.steam/root/steamapps/common/Mount &amp; Blade II Bannerlord</GameFolder>
     <Company />
