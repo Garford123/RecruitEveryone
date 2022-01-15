@@ -278,7 +278,9 @@ namespace RecruitEveryone.Behaviors
 				AccessTools.Field(typeof(Hero), "_heroTraits").SetValue(_characterTemplate.HeroObject, heroTraits);
 				AccessTools.Field(typeof(Hero), "_heroPerks").SetValue(_characterTemplate.HeroObject, heroPerks);
 				AccessTools.Field(typeof(Hero), "_heroSkills").SetValue(_characterTemplate.HeroObject, heroSkills);
-				AccessTools.Property(typeof(Hero), "CharacterObject").SetValue(hero, _characterTemplate);
+				//AccessTools.Property(typeof(Hero), "CharacterObject").SetValue(hero, _characterTemplate);
+				//hero.CharacterObject = _characterTemplate;
+				AccessTools.Field(typeof(Hero), "_characterObject").SetValue(hero, _characterTemplate);
 
 				EquipmentHelper.AssignHeroEquipmentFromEquipment(hero, _civilianEquipment);
 
